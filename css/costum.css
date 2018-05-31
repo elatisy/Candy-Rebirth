@@ -1,0 +1,60 @@
+.heimu {
+    border-radius: 3px;
+    background-color: #000000;
+    color: #000000;
+}
+
+.heimu:hover {
+    color: #FFFFFF;
+}
+
+.author-info .avatar {
+    animation: rollAuthorImg 5s linear 0s infinite;
+    -moz-animation: rollAuthorImg 5s linear 0s infinite;
+    -webkit-animation: rollAuthorImg 5s linear 0s infinite;
+}
+
+.author-info .avatar:hover {
+    animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+}
+
+#comments .avatar {
+    -webkit-transition: -webkit-transform 0.25s ease-out;
+    -moz-transition: -moz-transform 0.25s ease-out;
+    transition: transform 0.25s ease-out;
+}
+
+#comments .avatar:hover {
+    transform: rotate(360deg) scale(1.2);
+    -moz-transform: rotate(360deg) scale(1.2);
+    -webkit-transform: rotate(360deg) scale(1.2);
+}
+
+@keyframes rollAuthorImg {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes rollAuthorImg {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes rollAuthorImg {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
